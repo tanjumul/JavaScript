@@ -16,20 +16,24 @@
 
 
 
-function sum_of_natural(num){ 
-  let sum = 0 ; 
+// function sum_of_natural(num){ 
+//   let sum = 0 ; 
 
-  for(let i =0; i<=num; i++){ 
-    sum+=i; 
-  }
-  return sum; 
+//   for(let i =1; i<=num; i++){ 
+//     sum+=i; 
+//   }
+//   return sum; 
 
+// }
+
+// console.log(sum_of_natural(6)); 
+
+
+
+
+/* Another way to do the same thing is  */
+
+function natural_num_fast(num){ 
+  return num*(num+1)/2; //this is the formula  , you should've known this, okay ! 
 }
-
-console.log(sum_of_natural(6)); 
-
-
-
-
-
-
+console.log(natural_num_fast(5)); 
