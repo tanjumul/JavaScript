@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html>
+  <head></head>
+  <body>
+
+<button class="current-status" onclick="
+  console.log(`Current counts :${count}`); 
+  ">currunt count</button>
+<button class="one"onclick="
+count++; 
+console.log(`Current counts :${count}`); 
+">+1</button>
+
+
+<button class="four"onclick="
+count+= 4; 
+console.log(`Current counts :${count}`); 
+">+4</button>
+
+
+<button class="five"onclick="
+count+= 5; 
+console.log(`Current counts :${count}`); 
+
+">+5</button>
+
+<button class="remove-on" onclick="
+count--; 
+console.log(`Current counts :${count}`); 
+">remove</button>
+
+<button class="minus-two" onclick="
+count-=2; 
+console.log(`Decreasing by : ${count}`);
+">-2</button>
+
+<button class="minus-three" onclick="
+count-=3; 
+console.log(`Decreasing by : ${count}`);
+">-3</button>
+    <script>
+      let name = 'Tanjumul'; 
+      let count = 0; 
+
+      console.log(`My name is ${name}`);
+
+    let cost = (5*1)+ (2*3)+ (1*9);
+    console.log(`Cost of food: $${cost}`); 
+    
+    let afterTax = cost*0.1; 
+
+    console.log(`Tax (10%): $${afterTax}`);
+
+
+    console.log(`Total cost: $${afterTax+cost}`);
+
+
+
+
+    </script>
+  </body>
+  </html>
