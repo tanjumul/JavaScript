@@ -28,9 +28,9 @@
       if(computerMove === 'Rock'){
         result = 'Tie';
       } else if ( computerMove === 'Paper'){
-        result = 'You win'; 
-      } else if (computerMove === 'Scissors'){
         result = 'You loose'; 
+      } else if (computerMove === 'Scissors'){
+        result = 'You win'; 
       }
     
       alert(`Computer Picked : ${computerMove} , So ${result}`);
@@ -39,7 +39,27 @@
 
 
       <button class="paper-btn" onclick="
-      
+      let RandomNumber = Math.random(); 
+      let ComputerMove = '';
+
+      if(RandomNumber >= 0 && RandomNumber<=1/3){ 
+      ComputerMove = 'Rock'; 
+      } else if(RandomNumber >= 1/3 && RandomNumber <= 2/3){ 
+          ComputerMove = 'Paper';
+      } else if(RandomNumber >= 2/3 && RandomNumber <= 1){ 
+        ComputerMove = 'Scissor';
+      }
+
+      let Result = '';
+       if(ComputerMove === 'Rock' ){ 
+        Result = 'You win';
+       } else if(ComputerMove === 'Paper' ){
+        Result = 'You have Tied.';
+       } else if(ComputerMove === 'Scissor'){
+        Result = 'You Loose !';
+       }
+alert(`Computer picked : ${ComputerMove} and ${Result}`);
+
       ">Paper</button>
 
 
