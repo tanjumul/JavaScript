@@ -32,13 +32,15 @@ let cont = Math.random();
 let result = (cont) < 0.5 ? 'heads' : 'tails'; 
 let guess= 'tails'; 
 
-if(guess == result){ 
-  console.log('You win'); 
+// if(guess == result){ 
+//   console.log('You win'); 
 
-}else{ 
-  console.log('Loose brother !');
-}
+// }else{ 
+//   console.log('Loose brother !');
+// }
 
+rule = (guess == result) ? 'You win' : 'Loose bro !!' ;
+console.log(rule); 
 
 </script>
 </body>
