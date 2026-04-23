@@ -28,6 +28,14 @@
         console.log(`Cart Quantity now : ${cartQuantity}`);
         ">Reset Cart</button>
   
+  <button class="minus-1" onclick="
+  
+  cartQuantity-=2;
+
+ let empt = (cartQuantity < 0) ?
+   alert('0 items left in the cart, ADD some!')
+  : console.log(`Cart Quantity now : ${cartQuantity}`);
+  ">-2</button>
   <script>
   
 let cartQuantity = 0; 
