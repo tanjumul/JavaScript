@@ -9,18 +9,18 @@
 // let hour = 18; 
 // let name = 'Tanjumul'; 
 // if (hour >= 6 && hour <=12){
-//   console.log(`Good Morning MR.${name}`); 
+//   console.log(`Gutun Tag MR.${name}`); 
 // }else if (hour >= 13 && hour <= 17) { 
-//   console.log(`Good Afternoon MR.${name}`);
+//   console.log(`Gutun Aben MR.${name}`);
 // } else { 
-//   console.log(`Good Night MR.${name}`); 
+//   console.log(`Gut Night MR.${name}`); 
 
 // }
 
 const isHoliday = true;
 let age = 4;
 
-if(age <=6 && isHoliday == false || age>=65 && isHoliday == false ){ 
+if((age <=6 || age>=65) && !isHoliday ){ 
   console.log('You have a Discount in the amusement park today , Okay ? ')
 }
 else { 
