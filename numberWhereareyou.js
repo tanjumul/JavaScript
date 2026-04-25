@@ -11,4 +11,4 @@ return num.length*(num.length+1)/2 - sum ;
 }
 
 
-console.log(harayGeche([3,0,1]));
+console.log(harayGeche([3,0,1,4]));
