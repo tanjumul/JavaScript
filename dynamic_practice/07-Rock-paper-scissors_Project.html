@@ -5,73 +5,73 @@
   </head>
   <body>
     <button class="rock-btn" onclick="
-      Playerpick('Rock');
+      playGame('Rock');
       ">  
       Rock
     </button>
 
       <button class="paper-btn" onclick="
-           Playerpick('Paper');
+           playGame('Paper');
       ">  
       Paper
     </button>
 
       <button class="scissors-btn" onclick="
-           Playerpick('Scissor');
+           playGame('Scissor');
       ">  
       Scissors
     </button>
     <script>
 
-        function calculation(){ 
-          let compMov = '';
-          const computerMove = Math.random();
-          if(computerMove > 0 && computerMove <= 1/3){ 
-            compMov = 'Rock';
-          } else if (computerMove >= 1/3 && computerMove <= 2/3){
-            compMov = 'Paper'; 
+        function pickComputerMove(){ 
+          let computerMove = '';
+          const randomNumber = Math.random();
+          if(randomNumber > 0 && randomNumber <= 1/3){ 
+            computerMove = 'Rock';
+          } else if (randomNumber >= 1/3 && randomNumber <= 2/3){
+            computerMove = 'Paper'; 
           } else{ 
-           compMov = 'Scissor'
+           computerMove = 'Scissor'
           }
-          return compMov ; 
+          return computerMove ; 
         }
 
 
-        function Playerpick (pick){ 
-        const computerPick = calculation();
+        function playGame (playerMove){ 
+        const computerMove = pickComputerMove();
         let result = '';
-        if(pick == 'Rock') {
-        if(computerPick == 'Rock'){
+        if(playerMove == 'Rock') {
+        if(computerMove == 'Rock'){
             result = 'You tied !';
-        } else if ( computerPick == 'Paper'){ 
+        } else if ( computerMove == 'Paper'){ 
           result = 'You loose !';
         }
-        else if (computerPick == 'Scissor') {
+        else if (computerMove == 'Scissor') {
           result = 'You win !';
         }
-        } else if ( pick == 'Paper'){ 
-              if(computerPick == 'Paper'){
+        } else if ( playerMove == 'Paper'){ 
+              if(computerMove == 'Paper'){
                 result = 'You tied !';
-            } else if ( computerPick == 'Rock'){ 
+            } else if ( computerMove == 'Rock'){ 
               result = 'You Win !';
             }
-            else if (computerPick == 'Scissor') {
+            else if (computerMove == 'Scissor') {
               result = 'You Loose !';
             }
         }
-        else if( pick == 'Scissor'){
-           if(computerPick == 'Scissor'){
+        else if( playerMove == 'Scissor'){
+           if(computerMove == 'Scissor'){
             result = 'You tied !';
-        } else if ( computerPick == 'Paper'){ 
+        } else if ( computerMove == 'Paper'){ 
           result = 'You Win !';
         }
-        else if (computerPick == 'Rock') {
+        else if (computerMove == 'Rock') {
           result = 'You Loose !';
         }
         }
      
 
-       alert(`Computer Picked : ${computerPick} and so ${result}`); 
+       alert(`Computer Picked : ${computerMove} and so ${result}`); 
         }
 
 
