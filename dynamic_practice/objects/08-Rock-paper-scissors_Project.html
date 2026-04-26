@@ -9,6 +9,12 @@
     <button class="paper-btn" onclick="playGame('Paper')">Paper</button>
 
     <button class="scissors-btn" onclick="playGame('Scissor')">Scissors</button>
+
+  <button class="reset-scr" onclick="
+        score.wins = 0; 
+        score.losses = 0;   
+        score.ties = 0;
+  ">Reset Score</button>
     <script>
 
       const score = { 
@@ -16,6 +22,7 @@
         losses : 0,   
         ties : 0
       }
+
 
       function pickComputerMove() {
         let computerMove = "";
@@ -69,7 +76,9 @@
           score.ties += 1; 
         }
 
-        alert(`Computer Picked : ${computerMove} and so ${result} Wins : ${score.wins}, Losses : ${score.losses}, Ties : ${score.ties}`);
+        alert(`Computer Picked : ${computerMove} and so ${result} 
+        Wins : ${score.wins}, Losses : ${score.losses}, Ties : ${score.ties}`);
+        // alert("Second alert");
       }
     </script>
   </body>
