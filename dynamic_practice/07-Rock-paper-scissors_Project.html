@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock-paper-scissors-cleaner</title>
+  </head>
+  <body>
+    <button class="rock-btn" onclick="
+      Playerpick('Rock');
+      ">  
+      Rock
+    </button>
+
+      <button class="paper-btn" onclick="
+           Playerpick('Paper');
+      ">  
+      Paper
+    </button>
+
+      <button class="scissors-btn" onclick="
+           Playerpick('Scissor');
+      ">  
+      Scissors
+    </button>
+    <script>
+
+        function calculation(){ 
+          let compMov = '';
+          const computerMove = Math.random();
+          if(computerMove > 0 && computerMove <= 1/3){ 
+            compMov = 'Rock';
+          } else if (computerMove >= 1/3 && computerMove <= 2/3){
+            compMov = 'Paper'; 
+          } else{ 
+           compMov = 'Scissor'
+          }
+          return compMov ; 
+        }
+
+
+        function Playerpick (pick){ 
+        const computerPick = calculation();
+        let result = '';
+        if(pick == 'Rock') {
+        if(computerPick == 'Rock'){
+            result = 'You tied !';
+        } else if ( computerPick == 'Paper'){ 
+          result = 'You loose !';
+        }
+        else if (computerPick == 'Scissor') {
+          result = 'You win !';
+        }
+        } else if ( pick == 'Paper'){ 
+              if(computerPick == 'Paper'){
+                result = 'You tied !';
+            } else if ( computerPick == 'Rock'){ 
+              result = 'You Win !';
+            }
+            else if (computerPick == 'Scissor') {
+              result = 'You Loose !';
+            }
+        }
+        else if( pick == 'Scissor'){
+           if(computerPick == 'Scissor'){
+            result = 'You tied !';
+        } else if ( computerPick == 'Paper'){ 
+          result = 'You Win !';
+        }
+        else if (computerPick == 'Rock') {
+          result = 'You Loose !';
+        }
+        }
+     
+
+       alert(`Computer Picked : ${computerPick} and so ${result}`); 
+        }
+
+
+    </script>
+  </body>
+</html>
