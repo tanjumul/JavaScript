@@ -36,7 +36,16 @@ console.log(product)
 const product2 = { 
 
   name : 'shirt', 
-  price : '29999'
+  price : '29999', 
+
+  ['Delivery-time'] : '1 day', // we can use variable , calculation , concatanation of variables etc ... 
+  rating :{ 
+    stars : 3.5, 
+    count : 87
+  },
+  fun : function function1 (){
+    console.log('This is function under a object');
+  }  
 
 };
 
@@ -44,6 +53,10 @@ console.log(product2);
 console.log(product2.name); 
 console.log(product2.price); 
 console.log(product2['Delivery-time']); 
+console.log(product2.rating.stars);
+
+console.log(product2.fun);
+
 </script>
 </body>
 
