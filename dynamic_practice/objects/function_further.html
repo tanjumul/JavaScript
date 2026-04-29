@@ -1,0 +1,44 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>funciton_playground </title>
+    </head>
+    <body>
+      
+      <script>
+
+        function kilometerToMiles(length){ 
+          const distance = length/1.6; 
+          return distance; 
+        }
+
+        function milesToKilometer(length){ 
+          const distance = length*1.6; 
+          return distance; 
+        }
+
+        function convertLength(length , from , to){ 
+
+          if(from === 'miles' && to ==='km'){ 
+          return  milesToKilometer(length) + 'km'; 
+          
+          } else if(from === 'km' && to === 'miles'){ 
+          
+            return  kilometerToMiles(length) + 'miles';
+
+          } else if (from === to){ 
+            return length + ' ' + to; 
+
+          } 
+          else { 
+            return 'invalid options'; 
+          }
+     
+        }
+      console.log(convertLength(50,'miles','km')); 
+      console.log(convertLength(32,'km','miles'));
+      console.log(convertLength(50,'km','km'));  
+
+      </script>
+    </body>
+  </html>             
