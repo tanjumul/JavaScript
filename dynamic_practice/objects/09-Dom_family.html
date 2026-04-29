@@ -6,13 +6,18 @@
   <body>
 
     <button>Hello</button>
+    <button class="js-button">Second Button</button>
     
     <script>
     
     console.log(document.querySelector('button').innerHTML);
     document.querySelector('button')
       .innerHTML = 'Changed';
+
+      const buttonElemnet = document.querySelector('.js-button'); 
     
+      console.log(buttonElemnet); 
+      
     
     
     /*
