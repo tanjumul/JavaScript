@@ -14,11 +14,63 @@ const object1 = {
 };
 console.log(object1);
 const object2 = object1; 
-object2.message = 'Tanjumul';
+object2.message = 'Good job!';
 console.log(object2); 
 
+const object3 ={ 
+  message : 'Good job!'
+}; 
+
+console.log(object3 === object1); 
+console.log(object2 === object1);
 
 
-    </script>
+//shortcuts of objects: 
+
+const object4 = {
+message : 'Good job!', 
+price : 799
+};
+
+/*Destructuring , notice how i take out one or more variables out of the objects ? 
+then i call it by console.log with variables. */
+
+// const message = object4.message; 
+const { message , price} = object4; 
+console.log(message , price);
+  
+
+/*Shorthand property */
+
+
+/*if i want to use the substitue value of the object4 in the object5 then
+ i use the variable of obj4 here in obj5*/
+
+const object5 ={ 
+  //message : message,
+//we can use the same name and value in one 
+  message ,
+
+  // method : function function1(){ 
+  //   console.log('method');
+  // } 
+  /*if we call a mathod like this method() it will do the same thing as ' in a object there is a function and 
+  calling object_name. object_variable_where_function is laying*/
+
+  //instade we can do this : 
+
+  method(){ 
+    console.log('This is a method in the object ');
+  }
+}
+console.log(object5); 
+object5.method(); 
+//05:24
+
+/*What i have used here : 
+objects , auto boxing , references , shortcuts (destructing, shorthand property , shorthand method 
+*/
+
+</script>
   </body>
 </html>
