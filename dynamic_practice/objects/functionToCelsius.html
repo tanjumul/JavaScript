@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html>
+  <head> <title>exercise 7 functions</title></head>
+<body>
+  
+  <script>
+    function convertToFahrenheit(celsius){ 
+      let Fahrenheit = (celsius * 9/5)+32; 
+      return Fahrenheit; 
+    } 
+
+     function convertToCelsius(fahrenheit){ 
+      let Celsius = (fahrenheit - 32) * 5/9; 
+      return Celsius; 
+    }
+
+   function convertTemperature(degree, unit){ 
+
+if(unit === 'C'){ 
+  const result = convertToFahrenheit(degree); 
+  return result + 'C'; 
+} else if(unit === 'F' ){ 
+  const result = convertToCelsius(degree); 
+  return result + 'F';
+} else{ 
+  return 'Invalid Degree or Scale';
+}
+
+
+   }
+
+    console.log(convertTemperature(25, 'C')); 
+    console.log(convertTemperature(86, 'F')); 
+    
+  </script>
+</body>
+
+  </html>
