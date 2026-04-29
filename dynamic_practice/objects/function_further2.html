@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>further practice</title>
+  </head>
+  <body>
+    
+    <script>
+      function convertTomiles (length){ 
+        const distance = length * 1.6 ; 
+        return distance; 
+      }
+        function convertTokm (length){ 
+        const distance = length/1.6 ; 
+        return distance; 
+      }
+
+      function convertLength(length , from , to){ 
+
+        if (from === 'miles' && to === 'km'){ 
+          return convertTokm(length);
+        } else if (from === 'km' && to === 'miles'){ 
+          return convertTomiles(length); 
+        } else { 
+          return 'Invalid input'; 
+        }
+
+
+      }
+
+console.log(convertLength(50,'miles','km')); 
+
+
+    </script>
+  </body>
+</html>
