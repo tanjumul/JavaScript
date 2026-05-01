@@ -35,7 +35,13 @@
 <p>Orders over $40 = FREE shipping.</p>
 
 <input type="text" class="js-input" placeholder="Cost of Order ?" onkeydown="
-console.log(event.key)"> <button onclick="
+console.log(event.key)
+if(event.key === 'Enter'){ 
+  calculate();  
+}
+
+
+"> <button onclick="
 calculate();">Calculate</button>
 
 
