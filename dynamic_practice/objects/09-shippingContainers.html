@@ -38,10 +38,7 @@
 calculate();">Calculate</button>
 
 
-<p class="js-input-resutls"></p>
-
-
-
+<p class="js-input-results"></p>
 
 
     <script>
@@ -50,26 +47,20 @@ function calculate(){
 
 const inputElement = document.querySelector('.js-input');
 
-const costs = Number(inputElement.value); 
+let costs = Number(inputElement.value); 
 
 let finalCosting; 
 
 if(costs > 40){ 
- costs = finalCosting; 
+  finalCosting = costs; 
 
 }else{ 
-  finalCosting=costs+10; 
+ finalCosting=costs+10; 
 }
-document.querySelector('.js-input-resutls').innerHTML = `${finalCosting}`;
+document.querySelector('.js-input-results').innerHTML = `$${finalCosting}`;
+console.log(finalCosting)
 
 }
-
-
-
-
-
-
-
 
 
       let score = JSON.parse(localStorage.getItem("score")) || {
