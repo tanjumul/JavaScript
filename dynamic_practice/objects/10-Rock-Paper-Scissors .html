@@ -8,16 +8,30 @@
     color:white; 
     font-family:arial; 
   }
+  .title { 
+    font-size: 30px;
+    font-weight: bold;
+
+  }
+  .move-icon{ 
+    height:50px;
+    
+    
+
+  }
   
 </style>
 
   </head>
   <body>
-    <button class="rock-btn" onclick="playGame('Rock')">Rock</button>
+    <p class="title">Rock Paper & Scissors</p>
+    <button class="move-icon" onclick="playGame('Rock')"><img src="./assets/rock-emoji.png" alt=""></button>
 
-    <button class="paper-btn" onclick="playGame('Paper')">Paper</button>
+    <button class="move-icon" onclick="playGame('Paper')">
+      <img src="./assets/paper-emoji.png" alt="">
+    </button>
 
-    <button class="scissors-btn" onclick="playGame('Scissor')">Scissors</button>
+    <button class="move-icon" onclick="playGame('Scissor')"><img src="./assets/scissors-emoji.png" alt=""></button>
 
 <p class="js-result"></p>
 <p class="js-move"></p>
