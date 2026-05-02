@@ -95,16 +95,41 @@ else{
 }
 }
 }; 
-
-
-
 console.log(calculator.setNumbers(10,22).add()); //chaining works now 
 
 
 
+const university = { 
+  name : 'Shahjalal University of Science and Technology , Sylhet ',
+  
+  location : { 
+  city : 'Sylhet', 
+  country : 'Bangladesh'
+}, 
+departments : [
+  'Computer Science and Engineering ', 'Softwer Engineering ', 'Electrical and Electronic Engineering ' , 
+  'Industrial Production Engineering ' , 'Chemical Engineering and Polymer Science ' , '22 others ...'
+], 
+students : [ 
+  {name : 'Tanjumul Alom Siam', registration: '20193311XX'} , 
+  {name : 'Tasnimul Hasan', registration : '20193310xx'}, 
+  {name : 'ER Arnob', registration:'20193311XX'}, 
+  {name : 'Tanvir Rahman', registration:'20193310XX'}
+]
+ 
+}
 
 
+console.log(university.name); 
+console.log(university.departments[0]); 
+console.log(university.students[0].name);
 
+university.students.push({name : 'DanDaDan' , registration: 69696966969})
+console.log(university.students[4].name);
+
+university.students.forEach(student =>{ 
+  console.log(`names are : ${student.name} and reg : ${student.registration} `);
+})
 
 
 
