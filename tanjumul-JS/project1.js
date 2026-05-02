@@ -81,6 +81,7 @@ const calculator = {
   setNumbers(a,b){
 this.number1 = a; 
 this.number2 = b; 
+return this; 
   
 },
 
@@ -93,16 +94,11 @@ else{
  return  this.number1 + this.number2 ; 
 }
 }
-
-
-
 }; 
 
 
 
-calculator.setNumbers(10,22);
-
-console.log(calculator.add());
+console.log(calculator.setNumbers(10,22).add()); //chaining works now 
 
 
 
