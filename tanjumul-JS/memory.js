@@ -27,3 +27,15 @@ let userAlom = {
 
 console.log(userAlom.email); 
 console.log(userTanj.email); 
+
+
+const dog = {
+  name : 'REx', 
+
+  calls (){ 
+    console.log(`${this.name} says Vauu Vauu`);
+  }
+}
+dog.calls(); 
+const dogSays = dog.calls; 
+dogSays();
