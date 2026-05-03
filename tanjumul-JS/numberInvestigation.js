@@ -29,3 +29,12 @@ console.log(boolisBoolean2);
 
 
 //when you use the 1 and convert it in the boolean then it gives like true , when youuse a string it will gives you a true , when you send it a null/0 / empty string it will send false , or 0 
+
+
+let toNumbers = 33; 
+
+let ToNumb = String(toNumbers); 
+console.log(typeof toNumbers);
+console.log(typeof ToNumb);
+
+// the typeof toNumbers before using the String() then passing it on the variable was showing that it was a number not a string ! 
