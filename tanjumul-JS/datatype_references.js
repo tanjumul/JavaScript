@@ -39,3 +39,15 @@ console.log(id === another_id);
  * 2.Functions , 
  * 3. Array
  */
+
+
+const heroes = ["Superman" , "Flash", "DarkSide" , "Cyborg" , "Mister terrific" , "Metamorpho" , "The Engineer"]; 
+
+console.log(heroes[3]); 
+
+
+// const bigNumber = 122773773733748474874847487922829849746398367936294623962; 
+
+// console.log(bigNumber); 
+
+
