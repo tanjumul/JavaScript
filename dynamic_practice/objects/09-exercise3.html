@@ -4,14 +4,36 @@
     <title>Ex3</title>
   </head>
   <body>
-    <input type="text" class="writes" placeholder="Name" onkeydown="">
-    <button class="subs" onclick="
-    const Elembtn = document.querySelector('.writes');
-    document.querySelector('.Para').innerHTML = `Your submitted text is : 
-    ${Elembtn.value}`;
+    <input type="text" class="writes" placeholder="Name" onkeydown="  
+      
+      if(event.key == 'Enter'){ 
+        pass(); 
+      }
+      
+      ">
+   
+   
+   <button class="subs" onclick="
+
+    pass(); 
     ">Submit</button>
     <p class="Para"></p>
     <script>
+      onkeydown = 
+      
+      function (event){ 
+if(event.key == '/'){ 
+  document.querySelector('.writes').focus(); 
+}
+
+      }
+      
+    
+function pass(){
+  const Elembtn = document.querySelector('.writes');
+    document.querySelector('.Para').innerHTML = `Your submitted text is : 
+    ${Elembtn.value}`;
+}
 
     </script>
   </body>
