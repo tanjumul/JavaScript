@@ -127,9 +127,41 @@ console.log(university.students[0].name);
 university.students.push({name : 'DanDaDan' , registration: 69696966969})
 console.log(university.students[4].name);
 
-university.students.forEach(student =>{ 
-  console.log(`names are : ${student.name} and reg : ${student.registration} `);
+university.students.forEach(i =>{ 
+  console.log(`names are : ${i.name} and reg : ${i.registration} `);
 })
+
+
+//optimized by tanj 
+
+const calculator2 = {
+  num1: null,
+  num2: null,
+  
+  setNumbers(a, b) {
+    this.num1 = a;
+    this.num2 = b;
+    return this;  
+  },
+  
+  add() {
+  //   if (this.num1 === null || this.num2 === null) {
+  //     return "Please set numbers first using setNumbers()";
+  //   }
+  //   return this.num1 + this.num2;
+  // }
+
+ return (this.num1 === null || this.num2 === null)  ?  'Get a life dutch**' : this.num1 + this.num2 ; 
+
+}
+}
+
+//normal way 
+calculator2.setNumbers(10, 5);
+calculator2.add(); // 15
+
+// my work of art , the crazy way !! 
+console.log(calculator2.setNumbers(10, 5).add()); // 15 - See? Chained together!
 
 
 
