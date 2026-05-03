@@ -35,7 +35,7 @@ const dog = {
   calls (){ 
     console.log(`${this.name} says Vauu Vauu`);
   }
-}
+} 
 dog.calls(); 
 const dogSays = dog.calls; 
 dogSays();
