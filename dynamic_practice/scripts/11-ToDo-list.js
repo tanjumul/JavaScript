@@ -9,6 +9,8 @@ function addTodo (){
 
   todolist.push(name); 
   console.log(todolist); 
+
+  inputElement.value = ' '; 
   
 
 
