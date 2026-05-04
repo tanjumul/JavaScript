@@ -1,4 +1,5 @@
-#First the querion Then the solution <br>
+#  Question & then the solutions <br>
+
 1. You have to print numbers n = 10; loop thorough the number and print that in console. 
 [task] : You can use Dom to take from the input field then put it in the console. 
 
