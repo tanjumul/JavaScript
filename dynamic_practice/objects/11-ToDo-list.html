@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODo</title>
+  </head>
+  <body>
+    
+<p> Todo List</p>
+<input type="text" placeholder="Todo name" class="js-input-name" onkeydown=" 
+function fun(event){ 
+ if (event.key == 'Enter'){ 
+
+addTodo(); 
+ }
+}
+
+fun(event); 
+">
+
+<button class="add" onclick="
+
+
+  addTodo(); 
+
+">Add</button>
+
+   <script src="../scripts/11-ToDo-list.js"></script>
+  </body>
+</html>
