@@ -78,3 +78,27 @@ for(let i =1; i<= num ; i++){
   }
 }
 ```
+
+
+4. Print the sum of the first N natural numbers : 
+  - input : 5 <br>
+  - output : 15 
+
+### Option Red : 
+
+``` javascript 
+num = 5; 
+
+let sum = num * (num +1) / 2; 
+console.log(sum); 
+```
+
+### Option Blue : 
+
+
+```javascript 
+
+
+
+
+```

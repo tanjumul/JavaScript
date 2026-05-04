@@ -15,12 +15,26 @@
 // }
 
 
-const num = 10; 
+// const num = 10; 
 
-for(let i =1; i<= num ; i++){ 
-  if(i%2 == 0 ){ 
-    console.log(` even num : ${i}`); 
-  } else{ 
-    console.log(`this is the odd num : ${i}`); 
-  }
+// for(let i =1; i<= num ; i++){ 
+//   if(i%2 == 0 ){ 
+//     console.log(` even num : ${i}`); 
+//   } else{ 
+//     console.log(`this is the odd num : ${i}`); 
+//   }
+// }
+
+
+// num = 5; 
+
+// let sum = num * (num +1) / 2; 
+// console.log(sum); 
+
+
+let num = 5; 
+let sum = 0
+for (let i = 1; i<=num; i++){ 
+   sum = sum + i; 
 }
+console.log(sum); 
