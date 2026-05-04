@@ -4,9 +4,11 @@
     <title>Array and Loops</title>
   </head>
   <body>
-    
+    <p> if we are doing a standard loop : then  i will use a for loop 
+      , if it's a non standard loop then i will use a while loop ; see the script for more info ; 
+    </p>
     <script>
-      const myArray = [10,20,30]; 
+      /*const myArray = [10,20,30]; 
       console.log(myArray); 
       console.log(myArray[0]); 
       myArray[0]= 99; 
@@ -18,8 +20,33 @@
 
       myArray.splice(0,1); 
       console.log(myArray); 
+*/
+/*
+let i = 1; 
+while(i<=5){
+  console.log(i);
+  i++; 
+}
 
+for(let i =1 ; i<=5; i++){ 
+  console.log(i); 
+}
 
+let randomNumber = 0; 
+while(randomNumber < 0.5){
+  randomNumber = Math.random(); 
+}
+console.log(randomNumber); */
+
+const todoList =[
+  'tanjumul' , 'alom' , 'siam' , 'deutschland ', 
+  'germany ', 'tschuss' , 'chocha ', 'vaucha' , 'messar'
+]
+
+for(let i = 0; i<todoList.length -1 ; i++)
+{ 
+  console.log(i, todoList[i]); 
+}
     </script>
   </body>
 </html>
