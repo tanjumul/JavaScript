@@ -11,7 +11,9 @@ function addTodo (){
   console.log(todolist); 
 
   inputElement.value = ' '; 
-  
 
+  const para = document.querySelector('.writes'); 
+  para.innerHTML = `${name}`;
+ 
 
 }
