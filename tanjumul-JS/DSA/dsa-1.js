@@ -7,9 +7,9 @@ const takeNumber = document.querySelector('.givein');
 const Intlen = takeNumber.value; 
 
   for(let i=1; i<=Intlen; i++){ 
-  console.log(i); 
+
+  let contains = Intlen - i 
+  console.log(contains);
 }
 console.log(takeNumber); 
 }
-
-

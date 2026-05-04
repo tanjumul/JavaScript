@@ -46,3 +46,9 @@ console.log(takeNumber);
 
 
 ```
+
+
+2. Print numbers from N to 1 without changing the loop condition above. 
+  - input : 5 
+  - output 5 , 4, 3, 2, 1
+
