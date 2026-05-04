@@ -52,3 +52,29 @@ console.log(takeNumber);
   - input : 5 
   - output 5 , 4, 3, 2, 1
 
+
+```javascript 
+let num = 10 ; 
+for (let i =1 ; i<=num; i++){ 
+  let number = num - i+1; 
+}
+console.log(number); 
+```
+
+
+3. Take out the even numbers from the inputed value above : 
+ 
+ input num : 10 
+ output : 2 , 4, 6, 8 , 10 
+
+ ```javascript 
+ const num = 10; 
+
+for(let i =1; i<= num ; i++){ 
+  if(i%2 == 0 ){ 
+    console.log(` even num : ${i}`); 
+  } else{ 
+    console.log(`this is the odd num : ${i}`); 
+  }
+}
+```
