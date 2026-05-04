@@ -83,6 +83,7 @@ for(let i =1; i<= num ; i++){
 4. Print the sum of the first N natural numbers : 
   - input : 5 <br>
   - output : 15 
+  - complexity : O(n)
 
 ### Option Red : 
 
@@ -98,6 +99,12 @@ console.log(sum);
 
 ```javascript 
 
+let num = 5; 
+let sum = 0
+for (let i = 1; i<=num; i++){ 
+   sum = sum + i; 
+}
+console.log(sum); 
 
 
 
