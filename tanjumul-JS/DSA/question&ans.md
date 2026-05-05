@@ -126,3 +126,56 @@ console.log(sum);
 
 
 ```
+
+6. Sum of all even numbers up to N ; 
+ - input : 10 ;
+ - output : 30 ; 
+
+
+## Time Complexity : O(n)
+
+```javascript 
+let n = 10;
+let sum = 0 ; 
+for(let i = 1; i <=n; i++) {
+
+  if(i%2==0){ 
+  sum =sum + i ; 
+  } 
+
+   
+}
+console.log(sum);
+```
+
+
+## Optimised code :  Time complexity : o(1)
+
+
+```javascript 
+
+let n = 10;
+let sum = 0 ; 
+let k = Math.floor(n/2); 
+
+sum = k * (k+1);
+
+console.log(sum); 
+
+```
+
+
+
+7. Print Squares of Numbers from 1 to N 
+
+## Time Complexity will be : o(n)
+```javascript 
+
+let num = 5; 
+let sum = 0
+for(let i = 1; i<=num ; i++){ 
+sum = i*i ;
+console.log(sum);  
+}
+
+```

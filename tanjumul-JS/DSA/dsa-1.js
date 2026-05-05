@@ -56,3 +56,32 @@
 // console.log(sum); 
 
 
+// let n = 10;
+// let sum = 0 ; 
+
+// for(let i = 1; i <=n; i++) {
+
+//   if(i%2==0){ 
+//   sum = i * (i+1) ; 
+//   } 
+
+   
+// }
+// console.log(sum);
+
+/* 
+let n = 10;
+let sum = 0 ; 
+let k = Math.floor(n/2); 
+
+sum = k * (k+1);
+console.log(sum); 
+
+*/ 
+
+// let num = 5; 
+// let sum = 0
+// for(let i = 1; i<=num ; i++){ 
+// sum = i*i ;
+// console.log(sum);  
+// }
