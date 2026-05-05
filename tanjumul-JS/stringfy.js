@@ -32,3 +32,5 @@ const myName = ichBin.split(',');
 
 console.log(myName); 
 console.log(myName[2]); 
+
+// console.log(typeof String()); 
