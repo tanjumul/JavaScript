@@ -25,3 +25,15 @@ console.log(myArr);
 
 myArr.unshift(9); 
 console.log(myArr); 
+
+myArr.shift(); 
+console.log(myArr); /* removing the first bit of the array or the starting index value of the array !  */
+
+//agin if i try : 
+
+myArr.shift(); //it will shift from the 0 , i mean it will takeout 0 and start from the 1. 
+
+console.log(myArr)
+
+
+
