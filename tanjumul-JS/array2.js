@@ -9,7 +9,7 @@ const musicIlove = [ 'limBiskitz' , 'Linkinpark' , 'Drake' , 'TravisScott' ,'Ale
 
 // console.log(newArr); 
 
-const allNewfavs = [...musicIlove , ... DC_superHeroes]; 
+const allNewfavs = [...musicIlove , ... DC_superHeroes];  //splashing in arrys with multiple arrays
 
 console.log(allNewfavs);
 
@@ -41,7 +41,7 @@ console.log(Array.from({name : 'Tanjumul'}));
  const score4 = 400; 
 
  console.log(Array.of(score1,score2,score3,score4)); 
- 
+
 
 
 
