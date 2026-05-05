@@ -32,9 +32,16 @@
 // console.log(sum); 
 
 
-let num = 5; 
-let sum = 0
-for (let i = 1; i<=num; i++){ 
-   sum = sum + i; 
-}
-console.log(sum); 
+
+//brute force solution [not optimised]
+//it take 1s almost 
+// complexity : O(n)
+// console.time(); 
+// let num = 100; 
+// let sum = 0
+// for (let i = 1; i<=num; i++){ 
+//    sum = sum + i; 
+// }
+// console.log(sum); 
+// console.timeEnd();  
+

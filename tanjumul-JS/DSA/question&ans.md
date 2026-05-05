@@ -106,6 +106,14 @@ for (let i = 1; i<=num; i++){
 }
 console.log(sum); 
 
+```
+
+
+5.Factorial of N  : 
+- input : 5 
+- output : 120 
+
+```javascript 
 
 
 ```
