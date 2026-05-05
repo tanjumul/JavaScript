@@ -85,7 +85,7 @@ for(let i =1; i<= num ; i++){
   - output : 15 
   - complexity : O(n)
 
-### Option Red : 
+### Option Red : Time Complexity : O(1)
 
 ``` javascript 
 num = 5; 
@@ -94,7 +94,7 @@ let sum = num * (num +1) / 2;
 console.log(sum); 
 ```
 
-### Option Blue : 
+### Option Blue : time complexity O(n)
 
 
 ```javascript 
@@ -112,8 +112,17 @@ console.log(sum);
 5.Factorial of N  : 
 - input : 5 
 - output : 120 
-
+## time Complexity : O(n)
 ```javascript 
+
+let num = 5; 
+sum = 1 ; 
+
+for(let i =1 ; i<=num ; i++ ){ 
+  sum = sum * i ; 
+
+}
+console.log(sum); 
 
 
 ```
