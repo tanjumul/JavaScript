@@ -27,7 +27,7 @@ console.log(newDate.getMonth()+1);
 
 console.log(newDate.getDate()); 
 
-
+newDate.toLocaleString('default')
 
 
 
