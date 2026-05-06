@@ -305,3 +305,13 @@ console.log(bigBoss(10,20,5))
 
 
 ```
+
+
+13. Check a number is positive, negative or zero ; 
+
+```javascript 
+let n = -9; 
+let result; 
+(n>0) ? result = 'Positive': (n<0) ? result = 'Negative' :  result = 'Zero';
+ console.log(result);  
+```
