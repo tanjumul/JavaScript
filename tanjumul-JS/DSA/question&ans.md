@@ -214,7 +214,15 @@ console.log(DiviSor(30));
 
 ```javascript 
 
+ let num = 10; 
+    let sum = 0; 
+for(let i = 1; i<=num; i++){ 
+  if(i%2!==0){  
+    sum+=i; 
+  }
 
+}
+  console.log(sum);
 
 ```
 
@@ -224,6 +232,12 @@ console.log(DiviSor(30));
  output : 1,8,27, 64,125 
 
 ```javascript 
+let n  = 5; 
+ let cube = 0; 
+ for(let i =1 ; i<=n ; i++){ 
+  cube = i*i*i; 
+   console.log(cube);
+ }
 
 
 
@@ -233,6 +247,61 @@ console.log(DiviSor(30));
  input : 1 to 20 
  output : 4 , 16 
  ```javascript
- 
+
+
+
+let n = 20 ;
+
+let pft_sqr = []; 
+for(let i = 1; i<=n; i++){ 
+  let root = Math.sqrt(i); 
+  let  rooted = Math.floor(root);
+  if(root === rooted && i%2==0){ 
+    pft_sqr.push(i);
+    console.log(pft_sqr); 
+  }
+}
+
+
+
  
    ```
+
+   12. find the biggest number among all the inputs 
+   input : 10 , 20 , 5 
+   output : 20 
+
+
+# Option : 1 with if else ; 
+   ```javascript 
+
+let a = 10 , b = 20 , c= 5; 
+
+if(a>b){ 
+  console.log(a);
+}else if(b>a) { 
+console.log(b);
+} else if( b > c){ 
+  console.log(b)
+} else if (c > a){ 
+  console.log(c);
+}else { 
+  console.log(c);
+}
+```
+
+# option 2 : with function : 
+
+```function 
+function bigBoss(x , y , z){ 
+
+  let bigN ;
+  
+(x>y && x > z) ? bigN = x : (y > z && y > x) ? bigN = y : bigN = z; 
+return bigN; 
+}
+
+console.log(bigBoss(10,20,5))
+
+
+```
