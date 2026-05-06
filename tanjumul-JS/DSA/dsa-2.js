@@ -9,9 +9,9 @@ function DiviSor(num){
     }
   } 
 
-    for(let j = 0; j<n.length; j++){ 
-     console.log(n[j]); 
-    }
+    // for(let j = 0; j<n.length; j++){ 
+    //  console.log(n[j]); 
+    // }
      return n; 
   }
 
