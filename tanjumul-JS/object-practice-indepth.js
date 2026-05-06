@@ -86,5 +86,21 @@ const obj5 = {1:"a", 2:"b"}
 const obj6 = {3:"a", 4:"b"}
 const obj7 = {5:"c", 6:"d"}
 
-const obj8 = Object.assign({}, obj5,obj6,obj7); 
-console.log(obj8); 
+// const obj8 = Object.assign({}, obj5,obj6,obj7);  
+
+// const obj9 = {...obj5 , ...obj6, ...obj7}; 
+// console.log(obj9); 
+
+// console.log(obj8); 
+
+const maps = new Map(); 
+
+[obj5,obj6, obj7].forEach(obj =>{ 
+  for([key,value] of Object.entries(obj)){
+    if(!maps.has(key)){ 
+      maps.set(key,[]);
+    }
+    maps.get(key).push(value); 
+  }
+})
+console.log(Object.fromEntries(maps)); 

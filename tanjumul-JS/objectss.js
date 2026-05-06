@@ -31,8 +31,8 @@ console.log(jsUser);
 
 jsUser.greetings = function(){ 
   console.log('Hello , Js user ! '); 
-
 }
 
 console.log(jsUser.greetings());
 
+console.log(jsUser);

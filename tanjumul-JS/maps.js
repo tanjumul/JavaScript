@@ -15,6 +15,7 @@ const obj4 = {
   2 : 'paglu head'
 }
 
+
  */
 
 
@@ -30,19 +31,20 @@ const obj2 = {
 
 const obj4 = { 
   1 : 'ostad Eaiyemin', 
-  2 : 'paglu head'
+  2 : 'paglu head',
+  
 }
 
 const map = new Map(); 
 
-[obj1,obj2, obj4].forEach(obj => { 
- for([key , value] of Object.entries(obj)){
-  if(!map.has(key)){ 
-    map.set(key,[]);
+[obj1,obj2,obj4].forEach(obj => { 
+  for([key , value] of Object.entries(obj)){ 
+    if(!map.has(key)){ 
+      map.set(key,[]); 
+    }
+    map.get(key).push(value); 
   }
-  map.get(key).push(value);  
-  // console.log(key); 
- }
 })
 
 console.log(Object.fromEntries(map)); 
+
