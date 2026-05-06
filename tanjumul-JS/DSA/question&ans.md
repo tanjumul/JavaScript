@@ -179,3 +179,60 @@ console.log(sum);
 }
 
 ```
+
+8. Print all numbers  divisible by 3 and 5 upto n : 
+input : 30 
+output : 15, 30
+## time complexity will be : o(n)
+
+```javascript
+
+function DiviSor(num){ 
+
+  let n = []; 
+  for(let i =1 ; i <=num ; i++){ 
+    if(i%3 ==0 && i%5==0){ 
+      n.push(i); 
+    }
+  } 
+
+    // for(let j = 0; j<n.length; j++){ 
+    //  console.log(n[j]); 
+    // }
+     return n; 
+  }
+
+
+
+console.log(DiviSor(30)); 
+```
+
+9. Find the Sum of the odd numbers upto N  
+ 
+ input : 10 , 
+ output : 25 , (1+3+5+7+9) 
+
+```javascript 
+
+
+
+```
+
+
+10. Print the Cubes of numbers from 1 to N 
+ input : 5 , 
+ output : 1,8,27, 64,125 
+
+```javascript 
+
+
+
+```
+
+11. print only the numbers that are both even and perfect squares : 
+ input : 1 to 20 
+ output : 4 , 16 
+ ```javascript
+ 
+ 
+   ```
