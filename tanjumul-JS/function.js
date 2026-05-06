@@ -29,3 +29,27 @@ function shopingCart (val1 , val2 , ...num1){
 console.log(shopingCart(20,40,50,877)); /**here the the values are assigned on val1 and val2 , and the rest values 
 are defined inside the sprade operator here ...num1 
 now : you can call it a rest operator and you can simply call it with rest parameter. */
+
+
+const myArray = [10,33,5532,22,29, 10 ]; 
+
+
+function returnSecondValue(getArray){ 
+  return getArray[1]; 
+}
+
+console.log(returnSecondValue(myArray)); 
+
+
+
+function secondArray (objectHere){ 
+
+  let result = []; 
+  let i = 0; 
+ while (i < objectHere.length){ 
+  result.push(objectHere[i])
+  i++; 
+ }
+ return result; 
+}
+console.log(secondArray(myArray));
