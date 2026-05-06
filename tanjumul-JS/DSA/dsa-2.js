@@ -90,7 +90,7 @@ function bigBoss(x , y , z){
 
   let bigN ;
   
-(x>y && x > z) ? bigN = x : (y > z && y > x) ? bigN = y : bigN = z; 
+(x>=y && x >= z) ? bigN = x : (y >= z && y >= x) ? bigN = y : bigN = z; 
 return bigN; 
 }
 
