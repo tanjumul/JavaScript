@@ -19,5 +19,13 @@
 
  }
 
- console.log(addTwoNumbs(23,22)); 
+//  console.log(addTwoNumbs(23,22)); 
 
+function shopingCart (val1 , val2 , ...num1){ 
+
+  return num1 ;
+}
+
+console.log(shopingCart(20,40,50,877)); /**here the the values are assigned on val1 and val2 , and the rest values 
+are defined inside the sprade operator here ...num1 
+now : you can call it a rest operator and you can simply call it with rest parameter. */
