@@ -69,18 +69,28 @@ const obj4 = {
 
 
 // const obj3 = Object.assign({}, obj1,obj2,obj4); 
+// const map = new Map(); 
+// [obj1, obj2,obj4].forEach(obj=>{ 
+//   for(let [key,value] of Object.entries(obj)){
+//     if(!map.has(key)){ 
+//       map.set(key,[]);
+//     }
+//     map.get(key).push(value);
+//   }
+// })
+
+// console.log(Object.fromEntries(map)); 
+
 const map = new Map(); 
-[obj1, obj2,obj4].forEach(obj=>{ 
+[obj1,obj2,obj4].forEach(obj =>{ 
   for(let [key,value] of Object.entries(obj)){
-    if(!map.has(key)){ 
-      map.set(key,[]);
+    if(!map.has(key)){
+      map.set(key,[]); 
     }
-    map.get(key).push(value);
   }
+    map.get(key).push(value); 
 })
-
-console.log(Object.fromEntries(map)); 
-
+console.log(Object.fromEntries(map));
 
 const obj5 = {1:"a", 2:"b"}
 const obj6 = {3:"a", 4:"b"}
