@@ -36,3 +36,22 @@ jsUser.greetings = function(){
 console.log(jsUser.greetings());
 
 console.log(jsUser);
+
+
+
+//destructuring 
+
+const course = 
+{ 
+   course : 'Blockchain',
+   price : 'free', 
+   courseInstructure : 'Harverd Graduate friend of mine'
+}
+
+console.log(course.courseInstructure); 
+
+const {courseInstructure : teacherTanju} = course; // or  you can use this 
+/** const {courseInstructure } = course;  */
+
+console.log(teacherTanju); 
+

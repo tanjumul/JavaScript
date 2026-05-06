@@ -104,3 +104,11 @@ const maps = new Map();
   }
 })
 console.log(Object.fromEntries(maps)); 
+
+
+
+console.log(Object.keys(tinderUser)); 
+console.log(Object.values(tinderUser)); 
+
+console.log(Object.entries(tinderUser)); 
+
